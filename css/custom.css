@@ -140,6 +140,7 @@ body * {
 .padding {
     flex: 0 0 114px;
     background-color: #1c1e25;
+    display: block;
 }
 .text-block {
     padding: 25vh 6vw  0 6vw;
@@ -570,10 +571,13 @@ hr {
     .locales {
         padding-right: 15px;
     }
+    .header .tagline {
+        font-size: 36px;
+    }
 }
 
 @media screen and (max-width: 500px) {
-    .header .buttons .btn {
+    .header .buttons {
         display: none;
     }
     .main .buttons .btn {
@@ -584,5 +588,26 @@ hr {
     }
     .two-cols.footer {
         flex-direction: column-reverse;
+    }
+    .header .tagline {
+        font-size: 18px;
+    }
+    .header .sign {
+        font-size: 12px;
+    }
+    .header .tagline {
+        margin-top: 50px;
+    }
+    .header .sign {
+        margin-top: 30px;
+    }
+    .main > div:not(.padding):not(.new-line).name-is-pic {
+        flex: 1 1 200px;
+    }
+    .text-block {
+        padding-top: 50px;
+    }
+    .right-contacts.two-cols {
+        padding-top: 20px;
     }
 }
